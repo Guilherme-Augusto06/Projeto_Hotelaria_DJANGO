@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+{% load static %}
+
+
+{% block body %}
+    
+     <ul>
+        {% for item in dados_hotel %}
+  
+            <div class="jumbotron text-center">
+                <h1 class="display-3">OBRIGADO PELA ESCOLHA!</h1>
+                <p class="lead"><strong>Cheque seu email</strong> para instruções de reservas ou o FAQ.</p>
+                <hr>
+                <p>
+                  Está com algum problema? <a href="#">Contato</a>
+                </p>
+                <p class="lead">
+                  <a class="btn btn-primary btn-sm" href="continueHomepage" role="button">Continue para homepage</a>
+                </p>
+            </div>
+           
+            
+
+        
+        {% endfor %}
+     </ul>
+
+{% endblock %}
