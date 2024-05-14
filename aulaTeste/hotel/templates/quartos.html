@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+{% load static %}
+
+
+{% block body %}
+        <div class="compras">
+        {% for item in dados_quarto %}
+            <div class="compra">
+                <img src="{{item.foto_quarto.url}}" alt="Foto">
+                <h3 id="nome">{{item.tipo}}</h3>
+                <p id="descricao">{{item.descricao}}</p>
+                <p id="valor">{{item.valor}}</p>
+                <div class="botao-comprar">
+                    <button id="comprar_corte1">Agendar</button>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+{% endblock %}
