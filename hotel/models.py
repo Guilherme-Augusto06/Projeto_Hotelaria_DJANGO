@@ -35,3 +35,4 @@ class Usuario(models.Model):
     email = models.EmailField(max_length=50)
     idade = models.IntegerField()
     data = models.DateField(default=timezone.now)
+    quartos = models.CharField(max_length=50)
